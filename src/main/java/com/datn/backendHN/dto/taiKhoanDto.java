@@ -14,8 +14,7 @@ public class taiKhoanDto {
     private String email;
 
     @NotBlank(message = "Mật khẩu không được để trống")
-    @Pattern(regexp = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$", 
-            message = "Mật khẩu phải có ít nhất 8 ký tự, bao gồm chữ cái và số")
+    @Pattern(regexp = "^.{8,}$", message = "Mật khẩu phải có ít nhất 8 ký tự")    
     private String matKhau;
 
     @NotBlank(message = "Số điện thoại không được để trống")

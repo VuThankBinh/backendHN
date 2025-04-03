@@ -23,8 +23,7 @@ public class TaiKhoanEntity {
 
     @NotBlank(message = "Mật khẩu không được để trống")
     @Column(name = "mat_khau", nullable = false)
-    @Pattern(regexp = "^(?=.*[A-Za-z])(?=.*\\d)[A-Za-z\\d]{8,}$", 
-            message = "Mật khẩu phải có ít nhất 8 ký tự, bao gồm chữ cái và số")
+    @Pattern(regexp = "^.{8,}$", message = "Mật khẩu phải có ít nhất 8 ký tự")
     private String matKhau;
 
     @NotBlank(message = "Số điện thoại không được để trống")
