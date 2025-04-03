@@ -16,8 +16,8 @@ public class SwaggerConfig {
     public OpenAPI openAPI() {
         return new OpenAPI()
                 .info(new Info()
-                        .title("ZimStay API Documentation")
-                        .description("API documentation cho dự án ZimStay")
+                        .title("Medical Booking API Documentation")
+                        .description("API documentation cho dự án Medical Booking")
                         .version("1.0")
                         .contact(new Contact()
                                 .name("Your Name")
